@@ -1,5 +1,6 @@
 <?php
  use Core\Router;
+use Core\Session;
 
  session_start();
 
@@ -32,5 +33,5 @@
 
  $router -> route($uri, $method);
 
- 
+ Session::unflash();
  
